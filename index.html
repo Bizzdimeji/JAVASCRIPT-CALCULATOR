@@ -8,6 +8,22 @@
   </head>
   <body></body>
   <script>
-    
+    const number1 = parseFloat(prompt("Enter First Number: "));
+    const operator = prompt("Enter the operator ( either -, /, + or * ): ");
+    const number2 = parseFloat(prompt("Enter Second Number: "));
+
+    let solution;
+
+    if (operator == "+") {
+      solution = number1 + number2;
+    } else if (operator == "-") {
+      solution = number1 - number2;
+    } else if (operator == "*") {
+      solution = number1 * number2;
+    } else {
+      solution = number1 / number2;
+    }
+
+    alert(`${number1} ${operator} ${number2} = ${solution}`);
   </script>
 </html>
