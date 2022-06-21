@@ -14,14 +14,14 @@
 
     let solution;
 
-    if (operator == "+") {
-      solution = number1 + number2;
-    } else if (operator == "-") {
-      solution = number1 - number2;
-    } else if (operator == "*") {
+    if (operator == "*") {
       solution = number1 * number2;
-    } else {
+    } else if (operator == "+") {
+      solution = number1 + number2;
+    } else if (operator == "/") {
       solution = number1 / number2;
+    } else {
+      solution = number1 - number2;
     }
 
     alert(`${number1} ${operator} ${number2} = ${solution}`);
